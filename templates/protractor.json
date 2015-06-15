@@ -1,5 +1,5 @@
 {
-  "name": "add verifications to ide",
+  "name": "create protractor page object stubs with the route, selectors and a get method",
   "runsWith": "js",
   "savedTo": "protractor/page_objects/{file!lastSegmentCap}.js",
   "start": "function {file!lastSegmentCap}() {",
@@ -9,7 +9,7 @@
     "css": "var {value} = element(by.(\"{selector}\"));",
     "id": "var {value} = element(by.id(\"{selector}\"));",
     "name": "var {value} = element(by.name(\"{selector}\"));",
-    "class": "",
+    "class": "var {value} = element(by.name(\"{selector}\"));",
     "linkText": "var {value} = element(by.linkText(\"{selector}\"));",
     "else": "//TODO: value \"{value}\" doing action \"{action}\" at selector \"{selector}\" was missing or not an expected selector type"
   },

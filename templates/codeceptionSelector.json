@@ -1,0 +1,21 @@
+{
+  "name": "create protractor page object stubs with the route, selectors and a get method",
+  "runsWith": "php",
+  "savedTo": "codeception/selectors/{file!lastSegmentHumanize}Page.php",
+  "start": "<?php\nclass {file!lastSegmentHumanize}Page {",
+  "onOpen":"public static $route = '{selector}';",
+  "onStoreElementPresent": {
+    "xpath": "public static ${value} = \"['xpath' => '{selector}']\";",
+    "css": "public static ${value} = \"['css' => '{selector}']\";",
+    "id": "public static ${value} = \"['id' => '{selector}']\";",
+    "name": "public static ${value} = \"['name' => '{selector}']\";",
+    "class": "public static ${value} = \"['class' => '{selector}']\";",
+    "linkText": "public static ${value} = \"['link' => '{selector}']\";",
+    "else": "//TODO: value \"{value}\" doing action \"{action}\" at selector \"{selector}\" was missing or not an expected selector type"
+  },
+  "end": "}}",
+  "beautify": {
+    "type": "js",
+    "indent_size": 4
+  }
+}

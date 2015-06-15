@@ -4,7 +4,7 @@
     <table cellpadding='1' cellspacing='1' border='1'>
         <thead>
             <tr>
-                <td rowspan='1' colspan='3'>homepage</td>
+                <td rowspan='1' colspan='3'>google_example</td>
             </tr>
         </thead>
         <tbody>
@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>storeElementPresent</td>
-                <td>xpath=hplogo</td>
+                <td>id=hplogo</td>
                 <td>brandingLogo</td>
             </tr>
             <tr>
@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td>storeElementPresent</td>
-                <td>xpath=lst-ib</td>
+                <td>id=lst-ib</td>
                 <td>searchTextField</td>
             </tr>
             <tr>
@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <td>storeElementPresent</td>
-                <td>xpath=Gmail</td>
+                <td>link=Gmail</td>
                 <td>gmailLink</td>
             </tr>
             <tr>
@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td>storeElementPresent</td>
-                <td>xpath=Images</td>
+                <td>link=Images</td>
                 <td>imagesLink</td>
             </tr>
             <tr>
@@ -66,7 +66,7 @@
             </tr>
             <tr>
                 <td>storeElementPresent</td>
-                <td>xpath=a.gb_ga.gb_2</td>
+                <td>css=a.gb_ga.gb_2</td>
                 <td>gridButton</td>
             </tr>
             <tr>
@@ -76,7 +76,7 @@
             </tr>
             <tr>
                 <td>storeElementPresent</td>
-                <td>xpath=gb_70</td>
+                <td>id=gb_70</td>
                 <td>signInButton</td>
             </tr>
             <tr>

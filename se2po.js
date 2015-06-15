@@ -10,6 +10,7 @@ format.extend(String.prototype, {
     lower: function(s) { return s.toLowerCase() },
     cap: function(s) { return s.charAt(0).toUpperCase() + s.slice(1) },
     uncap: function(s) { return s.charAt(0).toLowerCase() + s.slice(1) },
+    lastSegment: function(s) { return s.substring(s.lastIndexOf("/") + 1, s.length)},
     lastSegmentCap: function(s) {
         var last = s.substring(s.lastIndexOf("/") + 1, s.length);
         return last.charAt(0).toUpperCase() + last.slice(1)
@@ -17,6 +18,15 @@ format.extend(String.prototype, {
     lastSegmentUncap: function(s) {
         var last = s.substring(s.lastIndexOf("/") + 1, s.length);
         return last.charAt(0).toLowerCase() + last.slice(1)
+    },
+    lastSegmentHumanize: function(s) {
+        var last = s.substring(s.lastIndexOf("/") + 1, s.length);
+        var frags = last.split('_');
+        for (i=0; i<frags.length; i++) {
+            frags[i] = frags[i].charAt(0).toUpperCase() + frags[i].slice(1);
+        }
+        var result = frags.join('');
+        return result.charAt(0).toUpperCase() + result.slice(1)
     }
 });
 
@@ -24,7 +34,7 @@ var outputRules = [];
 outputRules.push(require('./templates/protractor.json'));
 outputRules.push(require('./templates/addVerificationIDE.json'));
 outputRules.push(require('./templates/mochaTestStub.json'));
-
+outputRules.push(require('./templates/codeceptionSelector.json'));
 var startOfOutput = function (args, outputRules) {
     return outputRules.start.format(args)
 };
