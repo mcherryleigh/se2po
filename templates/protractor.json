@@ -1,0 +1,21 @@
+{
+  "name": "add verifications to ide",
+  "runsWith": "js",
+  "savedTo": "protractor/page_objects/{file!lastSegmentCap}.js",
+  "start": "function {file!lastSegmentCap}() {",
+  "onOpen":"var route = '{selector}';",
+  "onStoreElementPresent": {
+    "xpath": "var {value} = element(by.xpath(\"{selector}\"));",
+    "css": "var {value} = element(by.(\"{selector}\"));",
+    "id": "var {value} = element(by.id(\"{selector}\"));",
+    "name": "var {value} = element(by.name(\"{selector}\"));",
+    "class": "",
+    "linkText": "var {value} = element(by.linkText(\"{selector}\"));",
+    "else": "//TODO: value \"{value}\" doing action \"{action}\" at selector \"{selector}\" was missing or not an expected selector type"
+  },
+  "end": "}}{file!lastSegmentCap}.prototype.get = function () {{browser.get(route);}};module.exports = new {file!lastSegmentCap}();",
+  "beautify": {
+    "type": "js",
+    "indent_size": 4
+  }
+}

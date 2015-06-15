@@ -1,0 +1,21 @@
+{
+  "name": "add verifications to ide",
+  "runsWith": "js",
+  "savedTo": "mochaStubs/{file!lastSegmentCap}.js",
+  "start": "var chai = require('chai');var chaiAsPromised = require('chai-as-promised');chai.use(chaiAsPromised);var expect = chai.expect;var {file!lastSegmentUncap} = require('./../../page_objects/{file!lastSegmentUncap}.js');before(function(){{{file!lastSegmentUncap}.get()}});describe('The {file}', function(){{",
+  "onOpen":"",
+  "onStoreElementPresent": {
+    "xpath": "it('should have element {value}', function () {{expect({file}.{value}).to.eventually.exist;}});",
+    "css": "it('should have element {value}', function () {{expect({file}.{value}).to.eventually.exist;}});",
+    "id": "it('should have element {value}', function () {{expect({file}.{value}).to.eventually.exist;}});",
+    "name": "it('should have element {value}', function () {{expect({file}.{value}).to.eventually.exist;}});",
+    "class": "it('should have element {value}', function () {{expect({file}.{value}).to.eventually.exist;}});",
+    "linkText": "it('should have element {value}', function () {{expect({file}.{value}).to.eventually.exist;}});",
+    "else": "//TODO: value \"{value}\" doing action \"{action}\" at selector \"{selector}\" was missing or not an expected selector type"
+  },
+  "end": "}});",
+  "beautify": {
+    "type": "js",
+    "indent_size": 4
+  }
+}

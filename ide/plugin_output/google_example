@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.stanleygibbons.com/" />
+<title>google_example</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">google_example</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=hplogo</td>
+	<td>brandingLogo</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=lst-ib</td>
+	<td>searchTextField</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=btnK</td>
+	<td>searchButton</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//form[@id='tsf']/div[2]/div[3]/center/div/div/div[7]/span</td>
+	<td>feelingLucky</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Gmail</td>
+	<td>gmailLink</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Images</td>
+	<td>imagesLink</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.gb_ga.gb_2</td>
+	<td>gridButton</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=gb_70</td>
+	<td>signInButton</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

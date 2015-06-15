@@ -1,0 +1,91 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<body>
+    <table cellpadding='1' cellspacing='1' border='1'>
+        <thead>
+            <tr>
+                <td rowspan='1' colspan='3'>homepage</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>open</td>
+                <td>/</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=hplogo</td>
+                <td>brandingLogo</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${hplogo}</td>
+                <td>brandingLogo</td>
+            </tr>
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=lst-ib</td>
+                <td>searchTextField</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${lst-ib}</td>
+                <td>searchTextField</td>
+            </tr>
+
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=//form[@id='tsf']/div[2]/div[3]/center/div/div/div[7]/span</td>
+                <td>feelingLucky</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${//form[@id='tsf']/div[2]/div[3]/center/div/div/div[7]/span}</td>
+                <td>feelingLucky</td>
+            </tr>
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=Gmail</td>
+                <td>gmailLink</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${Gmail}</td>
+                <td>gmailLink</td>
+            </tr>
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=Images</td>
+                <td>imagesLink</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${Images}</td>
+                <td>imagesLink</td>
+            </tr>
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=a.gb_ga.gb_2</td>
+                <td>gridButton</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${a.gb_ga.gb_2}</td>
+                <td>gridButton</td>
+            </tr>
+            <tr>
+                <td>storeElementPresent</td>
+                <td>xpath=gb_70</td>
+                <td>signInButton</td>
+            </tr>
+            <tr>
+                <td>verifyEval</td>
+                <td>xpath=${gb_70}</td>
+                <td>signInButton</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

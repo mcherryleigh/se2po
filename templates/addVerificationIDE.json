@@ -1,0 +1,21 @@
+{
+  "name": "add verifications to ide",
+  "runsWith": "ide",
+  "savedTo": "ide/verify/{file!lastSegmentUncap}",
+  "start": "<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'><body><table cellpadding='1' cellspacing='1' border='1'><thead><tr><td rowspan='1' colspan='3'>homepage</td></tr></thead><tbody>",
+  "onOpen":"<tr><td>open</td><td>{selector}</td><td></td></tr>",
+  "onStoreElementPresent": {
+    "xpath": "<tr><td>storeElementPresent</td><td>xpath={selector}</td><td>{value}</td></tr><tr><td>verifyEval</td><td>xpath=${{{selector}}}</td><td>{value}</td></tr>",
+    "css": "<tr><td>storeElementPresent</td><td>xpath={selector}</td><td>{value}</td></tr><tr><td>verifyEval</td><td>xpath=${{{selector}}}</td><td>{value}</td></tr>",
+    "id": "<tr><td>storeElementPresent</td><td>xpath={selector}</td><td>{value}</td></tr><tr><td>verifyEval</td><td>xpath=${{{selector}}}</td><td>{value}</td></tr>",
+    "name": "<tr><td>storeElementPresent</td><td>xpath={selector}</td><td>{value}</td></tr><tr><td>verifyEval</td><td>xpath=${{{selector}}}</td><td>{value}</td></tr>",
+    "class": "<tr><td>storeElementPresent</td><td>xpath={selector}</td><td>{value}</td></tr><tr><td>verifyEval</td><td>xpath=${{{selector}}}</td><td>{value}</td></tr>",
+    "linkText": "<tr><td>storeElementPresent</td><td>xpath={selector}</td><td>{value}</td></tr><tr><td>verifyEval</td><td>xpath=${{{selector}}}</td><td>{value}</td></tr>",
+    "else": ""
+  },
+  "end": "</tbody></table></body></html>",
+  "beautify": {
+    "type": "html",
+    "indent_size": 4
+  }
+}

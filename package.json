@@ -1,0 +1,10 @@
+{
+  "dependencies":{
+    "async": "*",
+    "fs": "*",
+    "js-beautify": "*",
+    "string-format": "*",
+    "tabletojson": "*",
+    "yargs": "*"
+  }
+}
