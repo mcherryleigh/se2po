@@ -62,6 +62,9 @@ var onStoreElements = function(args, outputRules) {
     } else if (args.selector.substring(0, 5) == 'link=') {
         args.selector = args.selector.slice(5);
         return outputRules.onStoreElementPresent.linkText.format(args)
+    } else if (args.selector.substring(0, 5) == 'name=') {
+        args.selector = args.selector.slice(5);
+        return outputRules.onStoreElementPresent.name.format(args)
     } else {
         return outputRules.onStoreElementPresent.else.format(args)
     }
@@ -102,7 +105,8 @@ var argv = require('yargs')
     .argv;
 
 var filteredRules = outputRules.filter(function( obj ) {
-    return obj.runsWith == argv.type;
+    if(argv.type=="all") return obj;
+    else return obj.runsWith == argv.type;
 });
 
 //console.log(argv);
@@ -112,7 +116,14 @@ if(argv.file !== null && typeof argv.type !== null) {
         var obj = {
             file: argv.file
         };
-        if(rule.beautify.type=='js') {
+        if(rule.beautify.type=='none'){
+            var fileData = startOfOutput(obj, rule) + processRules(obj, rule) + endOfOutput(obj, rule);
+            fs.writeFile(rule.savedTo.format(obj), fileData, function (err) {
+                if (err) throw err;
+                console.log('It\'s saved!');
+            });
+        }
+        else if(rule.beautify.type=='js') {
             var fileData = beautify(startOfOutput(obj, rule) + processRules(obj, rule) + endOfOutput(obj, rule), rule.beautify);
             fs.writeFile(rule.savedTo.format(obj), fileData, function (err) {
                 if (err) throw err;

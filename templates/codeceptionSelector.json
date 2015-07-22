@@ -15,7 +15,7 @@
   },
   "end": "}}",
   "beautify": {
-    "type": "js",
+    "type": "none",
     "indent_size": 4
   }
 }
