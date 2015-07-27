@@ -35,6 +35,7 @@ outputRules.push(require('./templates/protractor.json'));
 outputRules.push(require('./templates/addVerificationIDE.json'));
 outputRules.push(require('./templates/mochaTestStub.json'));
 outputRules.push(require('./templates/codeceptionSelector.json'));
+outputRules.push(require('./templates/codeceptionStub.json'));
 var startOfOutput = function (args, outputRules) {
     return outputRules.start.format(args)
 };

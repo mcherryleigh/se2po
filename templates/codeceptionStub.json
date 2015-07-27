@@ -1,0 +1,21 @@
+{
+  "name": "stubs for codeception - one per element in the page object asserting they are present",
+  "runsWith": "php",
+  "savedTo": "codeception/stubs/{file!lastSegmentHumanize}Cest.php",
+  "start": "<?php use \\WebDriverTester;class {file!lastSegmentHumanize}Cest{{ public function _after(\\WebdriverTester $I){{}}",
+  "onOpen":"public function _before(\\WebDriverTester $I){{$I->amOnPage('{selector}');}}",
+  "onStoreElementPresent": {
+    "xpath": "public function {value!uncap}ShouldExist(\\WebDriverTester $I){{$I->wantTo('see {value} on {file!lastSegmentHumanize}');$I->waitForElement({file!lastSegmentHumanize}Page::{value}, 30);$I->seeElement({file!lastSegmentHumanize}Page::{value});}}",
+    "css": "public function {value!uncap}ShouldExist(\\WebDriverTester $I){{$I->wantTo('see {value} on {file!lastSegmentHumanize}');$I->waitForElement({file!lastSegmentHumanize}Page::{value}, 30);$I->seeElement({file!lastSegmentHumanize}Page::{value});}}",
+    "id": "public function {value!uncap}ShouldExist(\\WebDriverTester $I){{$I->wantTo('see {value} on {file!lastSegmentHumanize}');$I->waitForElement({file!lastSegmentHumanize}Page::{value}, 30);$I->seeElement({file!lastSegmentHumanize}Page::{value});}}",
+    "name": "public function {value!uncap}ShouldExist(\\WebDriverTester $I){{$I->wantTo('see {value} on {file!lastSegmentHumanize}');$I->waitForElement({file!lastSegmentHumanize}Page::{value}, 30);$I->seeElement({file!lastSegmentHumanize}Page::{value});}}",
+    "class": "public function {value!uncap}ShouldExist(\\WebDriverTester $I){{$I->wantTo('see {value} on {file!lastSegmentHumanize}');$I->waitForElement({file!lastSegmentHumanize}Page::{value}, 30);$I->seeElement({file!lastSegmentHumanize}Page::{value});}}",
+    "linkText": "public function {value!uncap}ShouldExist(\\WebDriverTester $I){{$I->wantTo('see {value} on {file!lastSegmentHumanize}');$I->waitForElement({file!lastSegmentHumanize}Page::{value}, 30);$I->seeElement({file!lastSegmentHumanize}Page::{value});}}",
+    "else": "//TODO: value \"{value}\" doing action \"{action}\" at selector \"{selector}\" was missing or not an expected selector type"
+  },
+  "end": "}}",
+  "beautify": {
+    "type": "none",
+    "indent_size": 4
+  }
+}
